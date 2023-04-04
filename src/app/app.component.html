@@ -1,2 +1,8 @@
-<tp-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/400px-Sultan_theBarbary_Lion.jpg" description="Leão"></tp-photo>
-<tp-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg" description="Leoa"></tp-photo>
+<tp-photo 
+    *ngFor="let photo of photos" 
+    [url]="photo.url" 
+    [description]="photo.description">
+</tp-photo>
+
+
+
